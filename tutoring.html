@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Math Tutoring | Arnav Bhola</title>
+    <style>
+      :root {
+        --bg-color: #f8f9fa;
+        --text-color: #212529;
+        --primary-color: #1a73e8;
+        --secondary-color: #e9ecef;
+        --accent-color: #0d6efd;
+      }
+
+      .dark-mode {
+        --bg-color: #212529;
+        --text-color: #f8f9fa;
+        --primary-color: #4dabf7;
+        --secondary-color: #343a40;
+        --accent-color: #339af0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: all 0.3s ease;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 0.5rem;
+        margin-top: 2rem;
+      }
+
+      .toggle-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+      }
+
+      .toggle-btn {
+        background: var(--secondary-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .card {
+        background: var(--secondary-color);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+      }
+
+      .highlight {
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .price-container {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+      }
+
+      .price-box {
+        flex: 1;
+        min-width: 200px;
+        background: var(--bg-color);
+        padding: 1rem;
+        border-radius: 8px;
+        border: 1px solid var(--primary-color);
+      }
+
+      .cta {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: var(--primary-color);
+        color: white;
+        border-radius: 8px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toggle-container">
+        <button
+          class="toggle-btn"
+          id="modeToggle"
+        >
+          <span id="modeIcon">🌙</span> <span id="modeText">Dark Mode</span>
+        </button>
+      </div>
+
+      <header>
+        <h1>Math Tutoring Services</h1>
+        <p>Personalized online tutoring for middle school to college students</p>
+      </header>
+
+      <div class="card">
+        <h2>What I Offer</h2>
+        <p>Comprehensive tutoring in:</p>
+        <ul>
+          <li>Algebra I & II</li>
+          <li>Pre-Calculus</li>
+          <li>SAT Math Preparation</li>
+          <li>AP Calculus (AB/BC)</li>
+          <li>Introductory College Calculus</li>
+        </ul>
+        <p>
+          <span class="highlight">Summer special:</span> Daily tutoring available to prevent
+          learning loss.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>My Qualifications</h2>
+        <ul>
+          <li>
+            <span class="highlight">Perfect 760 PSAT Math score</span> - I know exactly what it
+            takes to excel on standardized tests
+          </li>
+          <li>Currently pursuing advanced college-level mathematics courses</li>
+          <li>AP Calculus BC with <span class="highlight">4.0 GPA</span></li>
+          <li>Experience tutoring students of various age groups</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Pricing & Format</h2>
+        <div class="price-container">
+          <div class="price-box">
+            <h3>One-on-One</h3>
+            <p><span class="highlight">$50/session</span></p>
+            <p>Personalized attention</p>
+          </div>
+          <div class="price-box">
+            <h3>Group Sessions</h3>
+            <p><span class="highlight">$20/session</span></p>
+            <p>Great for friends</p>
+          </div>
+        </div>
+        <p>
+          <span class="highlight">Flexible scheduling:</span> Online sessions available at
+          convenient times
+        </p>
+        <p><span class="highlight">Free demo session</span> to see if we're a good fit</p>
+      </div>
+
+      <div class="card">
+        <h2>Additional Benefits</h2>
+        <ul>
+          <li>
+            Access to exclusive study materials:
+            <ul>
+              <li>Formula cheat sheets</li>
+              <li>Custom practice problems</li>
+              <li>Lesson slides</li>
+            </ul>
+          </li>
+          <li><span class="highlight">Score improvement guarantee</span> - Or your money back</li>
+          <li>Regular progress reports for parents</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact Me</h2>
+        <p>Ready to boost your math skills? Get in touch!</p>
+        <div class="contact-info">
+          <span><span class="highlight">Phone:</span> 860-881-9133</span>
+          <span><span class="highlight">Email:</span> arnav.bholausa@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="cta">Limited summer spots available - Book your free demo session today!</div>
+    </div>
+
+    <script>
+      const modeToggle = document.getElementById("modeToggle");
+      const modeIcon = document.getElementById("modeIcon");
+      const modeText = document.getElementById("modeText");
+
+      modeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          modeIcon.textContent = "☀️";
+          modeText.textContent = "Light Mode";
+        } else {
+          modeIcon.textContent = "🌙";
+          modeText.textContent = "Dark Mode";
+        }
+      });
+    </script>
+  </body>
+</html>
